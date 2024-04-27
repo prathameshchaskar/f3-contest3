@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <div class="container">
+        <!-- Section to add item -->
+        <section class="add-item">
+            <form id="addItemForm">
+                <input type="text" id="itemName" placeholder="Item Name" required>
+                <input type="date" id="itemDate" required>
+                <select id="itemPriority" required>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <!-- Section for Today's Tasks -->
+        <section class="today-tasks">
+            <h2>Today's Tasks</h2>
+            <div id="todayTasks"></div>
+        </section>
+
+        <!-- Section for Future Tasks -->
+        <section class="future-tasks">
+            <h2>Future Tasks</h2>
+            <div id="futureTasks"></div>
+        </section>
+
+        <!-- Section for Completed Tasks -->
+        <section class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <div id="completedTasks"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
